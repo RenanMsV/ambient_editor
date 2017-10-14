@@ -25,6 +25,6 @@ Load Button : Show all presets in ambient_editor/presets folder wich can be sele
 
 ### Known Issues:
 
-Does not follow the day and night cycle. Therefore, the schema will remain the same until changed or deactivated. If disabled, it will return to normal FlightGear.
+Does not follow the day and night cycle. Therefore, the schema will remain the same until changed or deactivated. If disabled, it will return to normal FlightGear scheme.
 
 ![Profile](https://i.imgur.com/lYwX6e3.png)
