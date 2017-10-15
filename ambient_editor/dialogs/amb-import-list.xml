@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<name>ambient_editor_import_list</name>
+	<layout>vbox</layout>
+	<group>
+		<layout>hbox</layout>
+
+		<empty><stretch>1</stretch></empty>
+
+		<text>
+			<label>Import Preset</label>
+		</text>
+
+		<empty><stretch>1</stretch></empty>
+
+		<button>
+			<legend> </legend>
+			<key>Esc</key>
+			<pref-width>16</pref-width>
+			<pref-height>16</pref-height>
+			<binding>
+				<command>dialog-close</command>
+			</binding>
+		</button>
+
+	</group>
+
+	<hrule/>
+
+	<group>
+		<layout>vbox</layout>
+		<list>
+			<name>file-list</name>
+			<pref-height>200</pref-height>
+			<pref-width>200</pref-width>
+			<halign>fill</halign>
+			<valign>fill</valign>
+			<stretch>true</stretch>
+			<padding>6</padding>
+			<property>sim/addons/ambient-editor/selected-preset</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<binding>
+				<command>nasal</command>
+				<script>ambient_editor.ambient_editor_load_preset('import');</script>
+			</binding>
+			<value>...</value>
+		</list>
+	</group>
+
+	<hrule/>
+
+	<group>
+		<layout>hbox</layout>
+		<empty><stretch>1</stretch></empty>
+		<button>
+			<legend>Close</legend>
+			<!--pref-width>90</pref-width>
+			<pref-height>30</pref-height-->
+			<binding>
+				<command>dialog-close</command>
+			</binding>
+		</button>
+		<empty><stretch>1</stretch></empty>
+	</group>
+
+	<nasal>
+		<open> <![CDATA[
+			ambient_editor.ambient_editor_load_preset('sync');
+		]]> </open>
+
+		<close> <![CDATA[
+		]]> </close>
+	</nasal>
+</PropertyList>
