@@ -3,9 +3,9 @@ Change your simulator color schemes. Let it better for you !
 
 ### Requirements
 
-FlightGear 2017.3.1 version
-ALS Disabled
-Rembrandt Disabled
+* FlightGear 2017.3.1 version
+* ALS Disabled
+* Rembrandt Disabled
 
 ### Install Procedures
 
