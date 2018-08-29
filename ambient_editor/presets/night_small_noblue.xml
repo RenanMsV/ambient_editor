@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <scene>
+    <diffuse>
+      <red type="string">0.000000</red>
+      <green type="string">0.000000</green>
+      <blue type="string">0.000000</blue>
+    </diffuse>
+    <specular>
+      <red type="string">0.083621</red>
+      <green type="string">0.083621</green>
+      <blue type="string">0.083621</blue>
+    </specular>
+    <ambient>
+      <red type="string">0.155844</red>
+      <green type="string">0.116883</green>
+      <blue type="string">0.155844</blue>
+    </ambient>
+  </scene>
+  <dome>
+    <sky>
+      <red type="string">0.273735</red>
+      <green type="string">0.320441</green>
+      <blue type="string">0.402374</blue>
+    </sky>
+    <fog>
+      <red type="string">0.166405</red>
+      <green type="string">0.177455</green>
+      <blue type="string">0.195455</blue>
+    </fog>
+    <cloud>
+      <red type="string">0.102107</red>
+      <green type="string">0.116694</green>
+      <blue type="string">0.142625</blue>
+    </cloud>
+  </dome>
+</PropertyList>
