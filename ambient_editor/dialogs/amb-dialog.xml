@@ -42,7 +42,7 @@
     <label>Enable/Restore</label>
     <live>true</live>
     <halign>left</halign>
-    <property>sim/addons/ambient-editor/enable</property>
+    <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/enable</property>
     <binding>
       <command>dialog-apply</command>
     </binding>
@@ -67,11 +67,11 @@
       <label>0</label>
       <live>true</live>
       <format>%-.1f</format>
-      <property>sim/addons/ambient-editor/settings/scene/diffuse/red</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/scene/diffuse/red</property>
     </text>
     <slider>
       <live>true</live>
-      <property>sim/addons/ambient-editor/settings/scene/diffuse/red</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/scene/diffuse/red</property>
       <min>0</min>
       <max>1</max>
       <binding>
@@ -85,11 +85,11 @@
       <label>0</label>
       <live>true</live>
       <format>%-.1f</format>
-      <property>sim/addons/ambient-editor/settings/scene/specular/red</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/scene/specular/red</property>
     </text>
     <slider>
       <live>true</live>
-      <property>sim/addons/ambient-editor/settings/scene/specular/red</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/scene/specular/red</property>
       <min>0</min>
       <max>1</max>
       <binding>
@@ -107,11 +107,11 @@
       <label>0</label>
       <live>true</live>
       <format>%-.1f</format>
-      <property>sim/addons/ambient-editor/settings/scene/diffuse/green</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/scene/diffuse/green</property>
     </text>
     <slider>
       <live>true</live>
-      <property>sim/addons/ambient-editor/settings/scene/diffuse/green</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/scene/diffuse/green</property>
       <min>0</min>
       <max>1</max>
       <binding>
@@ -125,11 +125,11 @@
       <label>0</label>
       <live>true</live>
       <format>%-.1f</format>
-      <property>sim/addons/ambient-editor/settings/scene/specular/green</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/scene/specular/green</property>
     </text>
     <slider>
       <live>true</live>
-      <property>sim/addons/ambient-editor/settings/scene/specular/green</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/scene/specular/green</property>
       <min>0</min>
       <max>1</max>
       <binding>
@@ -147,11 +147,11 @@
       <label>0</label>
       <live>true</live>
       <format>%-.1f</format>
-      <property>sim/addons/ambient-editor/settings/scene/diffuse/blue</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/scene/diffuse/blue</property>
     </text>
     <slider>
       <live>true</live>
-      <property>sim/addons/ambient-editor/settings/scene/diffuse/blue</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/scene/diffuse/blue</property>
       <min>0</min>
       <max>1</max>
       <binding>
@@ -165,11 +165,11 @@
       <label>0</label>
       <live>true</live>
       <format>%-.1f</format>
-      <property>sim/addons/ambient-editor/settings/scene/specular/blue</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/scene/specular/blue</property>
     </text>
     <slider>
       <live>true</live>
-      <property>sim/addons/ambient-editor/settings/scene/specular/blue</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/scene/specular/blue</property>
       <min>0</min>
       <max>1</max>
       <binding>
@@ -197,11 +197,11 @@
       <label>0</label>
       <live>true</live>
       <format>%-.1f</format>
-      <property>sim/addons/ambient-editor/settings/scene/ambient/red</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/scene/ambient/red</property>
     </text>
     <slider>
       <live>true</live>
-      <property>sim/addons/ambient-editor/settings/scene/ambient/red</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/scene/ambient/red</property>
       <min>0</min>
       <max>1</max>
       <binding>
@@ -215,11 +215,11 @@
       <label>0</label>
       <live>true</live>
       <format>%-.1f</format>
-      <property>sim/addons/ambient-editor/settings/dome/sky/red</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/dome/sky/red</property>
     </text>
     <slider>
       <live>true</live>
-      <property>sim/addons/ambient-editor/settings/dome/sky/red</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/dome/sky/red</property>
       <min>0</min>
       <max>1</max>
       <binding>
@@ -237,11 +237,11 @@
       <label>0</label>
       <live>true</live>
       <format>%-.1f</format>
-      <property>sim/addons/ambient-editor/settings/scene/ambient/green</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/scene/ambient/green</property>
     </text>
     <slider>
       <live>true</live>
-      <property>sim/addons/ambient-editor/settings/scene/ambient/green</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/scene/ambient/green</property>
       <min>0</min>
       <max>1</max>
       <binding>
@@ -255,11 +255,11 @@
       <label>0</label>
       <live>true</live>
       <format>%-.1f</format>
-      <property>sim/addons/ambient-editor/settings/dome/sky/green</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/dome/sky/green</property>
     </text>
     <slider>
       <live>true</live>
-      <property>sim/addons/ambient-editor/settings/dome/sky/green</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/dome/sky/green</property>
       <min>0</min>
       <max>1</max>
       <binding>
@@ -277,11 +277,11 @@
       <label>0</label>
       <live>true</live>
       <format>%-.1f</format>
-      <property>sim/addons/ambient-editor/settings/scene/ambient/blue</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/scene/ambient/blue</property>
     </text>
     <slider>
       <live>true</live>
-      <property>sim/addons/ambient-editor/settings/scene/ambient/blue</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/scene/ambient/blue</property>
       <min>0</min>
       <max>1</max>
       <binding>
@@ -295,11 +295,11 @@
       <label>0</label>
       <live>true</live>
       <format>%-.1f</format>
-      <property>sim/addons/ambient-editor/settings/dome/sky/blue</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/dome/sky/blue</property>
     </text>
     <slider>
       <live>true</live>
-      <property>sim/addons/ambient-editor/settings/dome/sky/blue</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/dome/sky/blue</property>
       <min>0</min>
       <max>1</max>
       <binding>
@@ -327,11 +327,11 @@
       <label>0</label>
       <live>true</live>
       <format>%-.1f</format>
-      <property>sim/addons/ambient-editor/settings/dome/fog/red</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/dome/fog/red</property>
     </text>
     <slider>
       <live>true</live>
-      <property>sim/addons/ambient-editor/settings/dome/fog/red</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/dome/fog/red</property>
       <min>0</min>
       <max>1</max>
       <binding>
@@ -345,11 +345,11 @@
       <label>0</label>
       <live>true</live>
       <format>%-.1f</format>
-      <property>sim/addons/ambient-editor/settings/dome/cloud/red</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/dome/cloud/red</property>
     </text>
     <slider>
       <live>true</live>
-      <property>sim/addons/ambient-editor/settings/dome/cloud/red</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/dome/cloud/red</property>
       <min>0</min>
       <max>1</max>
       <binding>
@@ -367,11 +367,11 @@
       <label>0</label>
       <live>true</live>
       <format>%-.1f</format>
-      <property>sim/addons/ambient-editor/settings/dome/fog/green</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/dome/fog/green</property>
     </text>
     <slider>
       <live>true</live>
-      <property>sim/addons/ambient-editor/settings/dome/fog/green</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/dome/fog/green</property>
       <min>0</min>
       <max>1</max>
       <binding>
@@ -385,11 +385,11 @@
       <label>0</label>
       <live>true</live>
       <format>%-.1f</format>
-      <property>sim/addons/ambient-editor/settings/dome/cloud/green</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/dome/cloud/green</property>
     </text>
     <slider>
       <live>true</live>
-      <property>sim/addons/ambient-editor/settings/dome/cloud/green</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/dome/cloud/green</property>
       <min>0</min>
       <max>1</max>
       <binding>
@@ -407,11 +407,11 @@
       <label>0</label>
       <live>true</live>
       <format>%-.1f</format>
-      <property>sim/addons/ambient-editor/settings/dome/fog/blue</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/dome/fog/blue</property>
     </text>
     <slider>
       <live>true</live>
-      <property>sim/addons/ambient-editor/settings/dome/fog/blue</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/dome/fog/blue</property>
       <min>0</min>
       <max>1</max>
       <binding>
@@ -425,11 +425,11 @@
       <label>0</label>
       <live>true</live>
       <format>%-.1f</format>
-      <property>sim/addons/ambient-editor/settings/dome/cloud/blue</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/dome/cloud/blue</property>
     </text>
     <slider>
       <live>true</live>
-      <property>sim/addons/ambient-editor/settings/dome/cloud/blue</property>
+      <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/dome/cloud/blue</property>
       <min>0</min>
       <max>1</max>
       <binding>
@@ -453,7 +453,7 @@
       <legend>Save...</legend>
       <binding>
         <command>nasal</command>
-        <script>call(globals[getprop('/sim/addons/ambient-editor/namespace')]["ambient_editor_save_file"], nil);</script>
+        <script>call(globals["__addon[github.renanmsv.AmbientEditor]__"]["ambient_editor_save_file"], nil);</script>
       </binding>
     </button>
   </group>

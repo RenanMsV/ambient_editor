@@ -38,13 +38,13 @@
 			<valign>fill</valign>
 			<stretch>true</stretch>
 			<padding>6</padding>
-			<property>sim/addons/ambient-editor/selected-preset</property>
+			<property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/selected-preset</property>
 			<binding>
 				<command>dialog-apply</command>
 			</binding>
 			<binding>
 				<command>nasal</command>
-				<script>call(globals[getprop('/sim/addons/ambient-editor/namespace')]["ambient_editor_load_preset"], ['import']);</script>
+				<script>call(globals["__addon[github.renanmsv.AmbientEditor]__"]["ambient_editor_load_preset"], ['import']);</script>
 			</binding>
 			<value>...</value>
 		</list>
@@ -68,7 +68,7 @@
 
 	<nasal>
 		<open> <![CDATA[
-			call(globals[getprop('/sim/addons/ambient-editor/namespace')]["ambient_editor_load_preset"], ['sync']);
+			call(globals["__addon[github.renanmsv.AmbientEditor]__"]["ambient_editor_load_preset"], ['sync']);
 		]]> </open>
 
 		<close> <![CDATA[

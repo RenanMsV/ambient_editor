@@ -50,7 +50,7 @@
                             var my_canvas = canvas.get(cmdarg());
 
                             var root = my_canvas.createGroup();
-                            var path = getprop("/sim/addons/ambient-editor/path") ~ "/dialogs/amb-editor.png";
+                            var path = getprop("/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/path") ~ "/dialogs/amb-editor.png";
                             var child = root.createChild("image")
                                 .setFile(path)
                                 .setSize(200, 139)
@@ -77,7 +77,7 @@
                     <wrap>true</wrap>
                     <live>true</live>
                     <top-line>0</top-line>
-                    <property>/sim/addons/ambient-editor/about</property>
+                    <property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/about/description</property>
                 </textbox>
             </group>
     </group>

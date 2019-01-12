@@ -17,7 +17,7 @@ var ambient_editor_load_dialogs = func {
 	var dialogs   = ["ambient_editor", "ambient_editor_about", "ambient_editor_import_list"];
 	var filenames = ["amb-dialog", "about-dialog", "amb-import-list"];
 	forindex (var i; dialogs)
-		gui.Dialog.new("/sim/gui/dialogs/" ~ dialogs[i] ~ "/dialog", getprop("sim/addons/ambient-editor/path") ~ "/dialogs/" ~ filenames[i] ~ ".xml");
+		gui.Dialog.new("/sim/gui/dialogs/" ~ dialogs[i] ~ "/dialog", getprop("/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/path") ~ "/dialogs/" ~ filenames[i] ~ ".xml");
 }
 
 var init_ambient_editor_timer = func () {
@@ -25,8 +25,8 @@ var init_ambient_editor_timer = func () {
 	ambient_editor_values_sync();
 	var amb_edit_timer = maketimer(.01, ambient_editor_values_refresh);
 	amb_edit_timer.simulatedTime = 0;
-	var amb_edit_listener = _setlistener("/sim/addons/ambient-editor/enable", func {
-		enabled = props.globals.getNode('sim/addons/ambient-editor/enable').getValue();
+	var amb_edit_listener = _setlistener("/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/enable", func {
+		enabled = props.globals.getNode('/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/enable').getValue();
 		if(enabled){
 			amb_edit_timer.start();
 		}else{
@@ -49,14 +49,14 @@ var ambient_editor_values_sync = func {
 }
 
 var ambient_editor_values_handle = func (type) {
-	my = ["sim/addons/ambient-editor/settings/scene/diffuse", "sim/addons/ambient-editor/settings/scene/specular", "sim/addons/ambient-editor/settings/scene/ambient", "sim/addons/ambient-editor/settings/dome/sky", "sim/addons/ambient-editor/settings/dome/fog", "sim/addons/ambient-editor/settings/dome/cloud"];
+	my = ["/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/scene/diffuse", "/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/scene/specular", "/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/scene/ambient", "/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/dome/sky", "/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/dome/fog", "/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings/dome/cloud"];
 	they = ["rendering/scene/diffuse", "rendering/scene/specular", "rendering/scene/ambient", "rendering/dome/sky", "rendering/dome/fog", "rendering/dome/cloud"];
 	colors = ["/red", "/green", "/blue"];
 	if (type == 'init'){
 		getAmbientEditorPath();
-		props.globals.initNode('sim/addons/ambient-editor/enable', 0, "BOOL");
-		props.globals.initNode('sim/addons/ambient-editor/about', "Ambient Editor\nAddon by FlightGearBrasil.com.br", "STRING");
-		props.globals.initNode('sim/addons/ambient-editor/selected-preset', 'NIL', "STRING");
+		props.globals.initNode('/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/enable', 0, "BOOL");
+		props.globals.initNode('/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/about', "Ambient Editor\nAddon by FlightGearBrasil.com.br", "STRING");
+		props.globals.initNode('/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/selected-preset', 'NIL', "STRING");
 		forindex(var i; my){
 			forindex(var j; colors){
 				props.globals.initNode(my[i]~colors[j],'null');
@@ -82,7 +82,7 @@ var ambient_editor_values_handle = func (type) {
 var ambient_editor_save_file = func {
 	var save_xml_sel = nil;
 	var save_xml = func(n) {
-		result = io.write_properties(n.getValue(), props.globals.getNode("/sim/addons/ambient-editor/settings"));
+		result = io.write_properties(n.getValue(), props.globals.getNode("/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings"));
 		if(result == nil) print("Ambient Editor: Error trying to save file."); else print("Ambient Editor: Saved file to " ~ result);
 	}
 	if (save_xml_sel == nil) save_xml_sel = gui.FileSelector.new(save_xml, "Save...", "Save", ["*.xml"], getprop("/sim/fg-home") ~ "/Export/", "*.xml");
@@ -92,7 +92,7 @@ var ambient_editor_save_file = func {
 
 var ambient_editor_load_preset = func (type) {
 	var listN    = cmdarg().getNode("group[1]/list");
-	var path     = getprop("/sim/addons/ambient-editor/path") ~ "/presets/";
+	var path     = getprop("/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/path") ~ "/presets/";
 	var dir      = directory(path);
 	var list     = [];
 	if(type == 'sync'){
@@ -104,8 +104,8 @@ var ambient_editor_load_preset = func (type) {
 		fgcommand( "dialog-update", props.Node.new({"dialog-name" : "ambient_editor_import_list"}) );
 	}
 	if (type == 'import'){
-		var node      = props.globals.getNode("/sim/addons/ambient-editor/settings");
-		var selection = getprop('sim/addons/ambient-editor/selected-preset');
+		var node      = props.globals.getNode("/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/settings");
+		var selection = getprop('/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/selected-preset');
 		props.copy(io.read_properties(path ~ "/" ~ selection ~ ".xml"), node);
 	}
 }
@@ -115,8 +115,8 @@ var getAmbientEditorPath = func {
 	forindex (var n; listN) {
 		splited = split('/', listN[n].getChild("path").getValue());
 		if (splited[size(splited)-1] == "ambient_editor") {
-			props.globals.initNode("/sim/addons/ambient-editor/path", listN[n].getChild("path").getValue());
-			props.globals.initNode("/sim/addons/ambient-editor/namespace", '__addon[' ~ n ~ ']__');
+			props.globals.initNode("/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/path", listN[n].getChild("path").getValue());
+			props.globals.initNode("/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/namespace", '__addon[org.flightgear.addons.AmbientEditor]__');
 		}
 	}
 }
