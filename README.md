@@ -3,14 +3,16 @@ Change your simulator color schemes. Let it better for you !
 
 ### Requirements
 
-* FlightGear 2017.3.1 version (up to v3)
+* FlightGear 2017.3.1 version (up to v3) or 2020.1+
 * ALS Disabled
 * Rembrandt Disabled
 
 ### Releases
-* v1 : First release. No presets available.
+* 0.5.0 : 2020.1.0 compatibility.
+* 0.4.0 : 2018.1 compatibility.
+* 2017.3.1 : 2017.3.1 --addon compatibility.
 * v2 : Second release. Presets available.
-* v3 : WIP. 2017.3.1 --addon compatibility.
+* v1 : First release. No presets available.
 
 ### Install Procedures
 
@@ -24,9 +26,9 @@ Note that this command line must have the correct path to the ambient_editor fol
 
 ### How Presets Works
 
-Save Button : Use this button to save your current scheme. That must be saved at $FG_HOME/Export and be manually moved to ambient_editor/presets folder. Thats because FG can not write files outside $FG_HOME folder.
+Save Button : Use this button to save your current scheme. That will be saved to appdata and must be manually moved to presets folder that is inside the addon installation folder. Thats because FG can not write files outside of appdata.
 
-Load Button : Show all presets in ambient_editor/presets folder wich can be selected at runtime.
+Load Button : Show a list of the saved presets wich can be selected at runtime.
 
 ### Known Issues:
 

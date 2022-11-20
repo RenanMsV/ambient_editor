@@ -7,23 +7,23 @@
   </meta>
 
   <addon>
-    <identifier type="string">github.renanmsv.AmbientEditor</identifier>
+    <identifier type="string">github.renanmsv.addons.AmbientEditor</identifier>
     <name type="string">Ambient Editor</name>
-    <version type="string">0.4.0</version>
+    <version type="string">0.5.0</version>
 
     <authors>
       <author>
         <name type="string">RenanMsV</name>
         <email type="string">nomail</email>
-        <url type="string">https://github.com/RenanMsV/ambient_editor</url>
+        <url type="string">https://github.com/RenanMsV</url>
       </author>
     </authors>
 
     <maintainers>
       <maintainer>
-        <name type="string">FlightGear developers</name>
+        <name type="string">RenanMsV</name>
         <url type="string">
-          https://sourceforge.net/p/flightgear/mailman/flightgear-devel/
+          https://github.com/RenanMsV/ambient_editor
         </url>
       </maintainer>
     </maintainers>
@@ -59,19 +59,20 @@
       </home-page>
 
       <download type="string">
-        https://github.com/RenanMsV/ambient_editor/archive/master.zip
+        https://github.com/RenanMsV/ambient_editor/releases
       </download>
 
       <support type="string">
-        https://forum.flightgear.org/
+        https://github.com/RenanMsV/ambient_editor/issues
       </support>
 
       <code-repository type="string">
-        https://github.com/RenanMsV/ambient_editor
+        https://github.com/RenanMsV/ambient_editor.git
       </code-repository>
     </urls>
 
     <tags>
+      <tag type="string">lightning</tag>
       <tag type="string">color scheme</tag>
     </tags>
   </addon>

@@ -32,19 +32,19 @@
 		<layout>vbox</layout>
 		<list>
 			<name>file-list</name>
-			<pref-height>200</pref-height>
+			<pref-height>300</pref-height>
 			<pref-width>200</pref-width>
 			<halign>fill</halign>
 			<valign>fill</valign>
 			<stretch>true</stretch>
 			<padding>6</padding>
-			<property>/addons/by-id/github.renanmsv.AmbientEditor/addon-devel/selected-preset</property>
+			<property>/addons/by-id/github.renanmsv.addons.AmbientEditor/addon-devel/config/selected-preset</property>
 			<binding>
 				<command>dialog-apply</command>
 			</binding>
 			<binding>
 				<command>nasal</command>
-				<script>call(globals["__addon[github.renanmsv.AmbientEditor]__"]["ambient_editor_load_preset"], ['import']);</script>
+				<script>call(globals["__addon[github.renanmsv.addons.AmbientEditor]__"]["ambient_editor_load_preset"], ['import']);</script>
 			</binding>
 			<value>...</value>
 		</list>
@@ -67,11 +67,15 @@
 	</group>
 
 	<nasal>
-		<open> <![CDATA[
-			call(globals["__addon[github.renanmsv.AmbientEditor]__"]["ambient_editor_load_preset"], ['sync']);
-		]]> </open>
+		<open>
+			<![CDATA[
+			call(globals["__addon[github.renanmsv.addons.AmbientEditor]__"]["ambient_editor_load_preset"], ['sync']);
+			]]>
+		</open>
 
-		<close> <![CDATA[
-		]]> </close>
+		<close>
+			<![CDATA[
+			]]>
+		</close>
 	</nasal>
 </PropertyList>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<addons>
+		<by-id>
+			<github.renanmsv.addons.AmbientEditor>
+				<addon-devel>
+					<config>
+						<enable type="bool">false</enable>
+						<selected-preset>NIL</selected-preset>
+					</config>
+					<description>Change your FlightGear color schemes. Let it better for you!</description>
+					<credits>NIL</credits>
+					<storage-path>NIL</storage-path>
+				</addon-devel>
+			</github.renanmsv.addons.AmbientEditor>
+		</by-id>
+	</addons>
+</PropertyList>
